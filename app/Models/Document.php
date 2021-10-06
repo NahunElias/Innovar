@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Document extends Model
 {
     use HasFactory;
+
+    public function Activity(){
+        return $this->hasMany('App\Models\Activity');
+    }
 }

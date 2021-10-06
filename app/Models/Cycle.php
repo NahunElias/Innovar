@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Cycle extends Model
 {
     use HasFactory;
+
+    public function Module(){
+        return $this->hasMany('App\Models\Module');
+    }
+
+    public function Group(){
+        return $this->hasMany('App\Models\Group');
+    }
 }
