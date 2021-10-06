@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Qualification extends Model
 {
     use HasFactory;
+
+    public function Activity(){
+        return $this->belongsTo('App\Models\Activity');
+    }
 }

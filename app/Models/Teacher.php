@@ -12,4 +12,8 @@ class Teacher extends Model
     public function Subject(){
         return $this->hasMany('App\Models\Subject');
     }
+
+    public function Activity(){
+        return $this->hasMany('App\Models\Activity');
+    }
 }
