@@ -2,18 +2,19 @@
 
 namespace Database\Factories;
 
-use App\Models\Cycle;
-use App\Models\Group;
+use App\Models\Area;
+use App\Models\Subject;
+use App\Models\Teacher;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class GroupFactory extends Factory
+class SubjectFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Group::class;
+    protected $model = Subject::class;
 
     /**
      * Define the model's default state.
@@ -23,8 +24,9 @@ class GroupFactory extends Factory
     public function definition()
     {
         return [
-            'name'=> $this-> faker->randomElement(['Grupo 1', 'Grupo 2','Grupo 3']),
-            'cycle_id' => Cycle::all()->random()->id
+            'name'=>$this->faker->sentence(),
+            'area_id'=>Area::all()->random()->id,
+            'teacher_id'=>Teacher::all()->random()->id
         ];
     }
 }

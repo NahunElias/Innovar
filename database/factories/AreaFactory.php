@@ -2,18 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Cycle;
-use App\Models\Group;
+use App\Models\Area;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class GroupFactory extends Factory
+class AreaFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Group::class;
+    protected $model = Area::class;
 
     /**
      * Define the model's default state.
@@ -23,8 +22,7 @@ class GroupFactory extends Factory
     public function definition()
     {
         return [
-            'name'=> $this-> faker->randomElement(['Grupo 1', 'Grupo 2','Grupo 3']),
-            'cycle_id' => Cycle::all()->random()->id
+            'name'=>$this->faker->randomElement(['Biologia','Matematicas','Ciencias Sociales','Idiomas'])
         ];
     }
 }

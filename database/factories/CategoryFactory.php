@@ -22,7 +22,8 @@ class CategoryFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name'=>$this->faker->randomElement(['examen','taller','actividad']),
+            'colour'=>$this->faker->randomElement(['azul','verde','rojo'])
         ];
     }
 }

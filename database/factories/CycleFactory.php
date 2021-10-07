@@ -22,7 +22,9 @@ class CycleFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name'=>$this->faker->randomElement(['ciclo 1','ciclo 2','ciclo 3','ciclo 4','ciclo 5','ciclo 6']),
+            'description'=>$this->faker->paragraph(),
+            'duration'=>$this->faker->randomDigit()
         ];
     }
 }
