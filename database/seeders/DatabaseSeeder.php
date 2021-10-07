@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
         //$this->call(AreaSeeder::class);
         //$this->call(TeacherSeeder::class);
        // $this->call(QualificationSeeder::class);
-        $this->call(GroupSeeder::class);
+        
 
     }
 }
