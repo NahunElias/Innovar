@@ -18,7 +18,7 @@ class CreateCyclesTable extends Migration
 
             $table->string('name');
             $table->text('description');
-            $table->integer('duracion');
+            $table->integer('duration');
 
             $table->timestamps();
         });

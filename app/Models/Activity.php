@@ -13,6 +13,10 @@ class Activity extends Model
         return $this->belongsTo('App\Models\Teacher');
     }
 
+    public function student(){
+        return $this->belongsTo('App\Models\Student');
+    }
+
     public function Category(){
         return $this->belongsTo('App\Models\Category');
     }
@@ -22,6 +26,6 @@ class Activity extends Model
     }
 
     public function Qualification(){
-        return $this->hasMany('App\Models\Qualification');
+        return $this->hasOne('App\Models\Qualification');
     }
 }

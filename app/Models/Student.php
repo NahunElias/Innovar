@@ -12,4 +12,12 @@ class Student extends Model
     public function Request(){
         return $this->hasMany('App\Models\Request');
     }
+
+    public function Activities(){
+        return $this->hasMany('App\Models\Activity');
+    }
+
+    public function Group(){
+        return $this->belongsTo('App\Models\Group');
+    }
 }
