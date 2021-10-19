@@ -16,7 +16,7 @@
     <input type="hidden" id="clase_asignatura" value="{{ $idclase_a }}">
     <div class="card-body">
         <div class="table-responsive">
-            <!-- Projects table -->
+            <!--Tabla -->
             <table id="evaluacion_table" class="table table-bordered" width="100%" cellspacing="0">
                 <thead>
                     <tr>
