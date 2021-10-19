@@ -39,7 +39,7 @@ class DatabaseSeeder extends Seeder
     Module::factory(20)->create();
     Request::factory(20)->create();
     Subject::factory(20)->create();
-    assignments::factory(20)->create();
+    assignments::factory(30)->create();
     }
 
 }
