@@ -14,6 +14,7 @@ use App\Models\Request;
 use App\Models\Student;
 use App\Models\Subject;
 use App\Models\Teacher;
+use assignments;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -38,6 +39,7 @@ class DatabaseSeeder extends Seeder
     Module::factory(20)->create();
     Request::factory(20)->create();
     Subject::factory(20)->create();
+    assignments::factory(20)->create();
     }
 
 }
