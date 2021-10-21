@@ -9,6 +9,13 @@ class Subject extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'id',
+        'name',
+        'are_id',
+        'teacher_id',
+    ];
+    
     public function Area(){
         return $this->belongsTo('App\Models\Area');
     }

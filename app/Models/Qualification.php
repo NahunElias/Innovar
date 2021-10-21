@@ -12,4 +12,21 @@ class Qualification extends Model
     public function Activity(){
         return $this->belongsTo('App\Models\Activity');
     }
+
+    public function materia()
+    {
+        return $this->belongsTo('App\Models\Subject');
+    }
+
+    protected $fillable = [
+        'name',
+        'observation',
+        'note',
+        'date',
+        'subject_id',
+    ];
+
+    
+    
+    
 }
