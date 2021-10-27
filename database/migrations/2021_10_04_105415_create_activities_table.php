@@ -23,11 +23,12 @@ class CreateActivitiesTable extends Migration
             $table->string('state');
             $table->unsignedBigInteger('category_id');
             $table->unsignedBigInteger('teacher_id');
-            $table->unsignedBigInteger('qualification');
 
+            $table->foreign('student_id')->references('id')->on('students');        
+            $table->foreign('qualification_id')->references('id')->on('qualifications');
             $table->foreign('category_id')->references('id')->on('categories');
             $table->foreign('teacher_id')->references('id')->on('teachers');
-            $table->foreign('qualification')->references('id')->on('qualifications');
+            
 
             $table->timestamps();
         });

@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Request extends Model
 {
     use HasFactory;
+
+    public function Student(){
+        return $this->belongsTo('App\Models\Student');
+    }
 }

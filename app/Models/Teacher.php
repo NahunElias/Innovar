@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Teacher extends Model
 {
     use HasFactory;
+
+    public function Subject(){
+        return $this->hasMany('App\Models\Subject');
+    }
+
+    public function Activity(){
+        return $this->hasMany('App\Models\Activity');
+    }
 }
