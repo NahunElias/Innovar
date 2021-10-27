@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-<td>
-    @if ($estatu == 'A')
-        {{-- <span ></span> --}}
-        <div class="badge badge-info badge-pill">Activo</div>
-    @else
-        <div class="badge badge-danger badge-pill">Inactivo</div>
-    @endif
-
-</td>
-=======
 @extends('layouts.panel')
 
 @section('content')
@@ -87,4 +76,3 @@
 
 @endsection
 
->>>>>>> 35836a13fc43629c158732f82e4faf0c4ab598ef
