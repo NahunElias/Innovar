@@ -106,4 +106,8 @@
 @section('custom_script')
 <script src="{{ asset('js/maestro.js') }}"></script>
 
+<<<<<<< HEAD
 @endsection
+=======
+@endsection
+>>>>>>> af01b9ca83aff15a334bd9decdd480f88a36ce81
