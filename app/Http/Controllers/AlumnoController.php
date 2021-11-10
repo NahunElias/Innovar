@@ -277,4 +277,3 @@ class AlumnoController extends Controller
         }
     }
 }
-|
